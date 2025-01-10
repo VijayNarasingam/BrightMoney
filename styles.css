@@ -1,0 +1,822 @@
+/* Reset */
+@font-face {
+  font-family: 'gilroy-Light';
+  src: url(font/Gilroy-Light.ttf);
+}
+
+@font-face {
+  font-family: 'gilroy-Bold';
+  src: url(font/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'gilroy-Semibold';
+  src: url(font/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url(font/Gilroy-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: gilroy, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
+    
+  }
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  
+  /* Header */
+  .heading {
+    padding: 1rem 0;
+    text-align: center;
+    width: 100vw;
+    background: linear-gradient(to top left, #FEEFC7,#E3F1E7 );
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+  }
+
+
+  .heading .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px 0 100px;
+    border: 1.6px solid rgba(0, 0, 0, 0.11) ;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .logo img{
+    width: 4vw;
+
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links li p{
+    font-size: 0.5rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+
+  }
+
+  .nav-links a .stores{
+    background-color: #0e0e0e;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .nav-links a img{
+    width: 2vw;
+  }
+  
+
+  .heading .container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vh;
+
+  }
+
+  .heading .container1 p{
+    font-family: gilroy-bold, sans-serif ;
+    font-size: 3rem;
+    padding-top: 50px;
+    line-height: 30px;
+  }
+  .heading .container1 p1{
+    font-size: 3rem;
+    font-weight:lighter;
+  }
+  
+  .heading p span {
+    color: #34a853;
+  }
+  
+  .heading-features {
+    list-style: none;
+    margin: 1rem 0;
+    display: flex ;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+
+
+  .heading-features img{
+    width: 3vh;
+    margin-right: 5px;
+    margin-left: 50px;
+  }
+
+  .Downloadapp{
+    color: #FFF;
+    background: #0E1E14;
+    font-size: 20px;
+    padding: 10px 70px;
+    font-weight: 500;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    border: none;
+  }
+
+
+
+  a{
+    text-decoration: none;
+
+  }
+
+  .heading-image{
+    width: 75%;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+  
+  }
+  .DskDownload{
+    position: absolute;
+    display: block;
+    width: 200px;
+    top:100px;
+    right: -100px;
+    z-index: 100;
+
+    animation: spin 10s linear infinite;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }  
+
+  .heading-image img {
+    max-width: 100%;
+ 
+  }
+  
+  /* Why Section */
+  .why-bright {
+    text-align: center;
+    padding: 2rem 1rem;
+    justify-items: center;
+  }
+
+  .why-bright .container h2{
+    font-size: 2rem;
+    padding-bottom: 30px;
+  }
+
+  .why-bright .container h2 span{
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  
+  .features {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+   margin-bottom: 20px;
+  }
+
+  .feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-top: 40px;
+    padding-right: 30px;
+    color: #00000081;
+    font-size: 1rem;
+  }
+
+  .feature img{
+    width: 7vw;
+  }
+
+  .why-bright .container .Downloadapp{
+    color: #FFF;
+    background: #0E1E14;
+    font-size: 20px;
+    padding: 10px 70px;
+    font-weight: 500;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+  }
+  /* As Featured By */
+
+  .asFeaturedBy{
+    background: #F4F5F8;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    padding:  20px 200px ;
+    color: #959AA5;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  .asFeaturedBy img{
+    width: 10%;
+
+  }
+
+  .asFeaturedBy .cnbc img {
+    width: 60%;
+  }
+
+  /* Steps Section */
+  /* Section Styling */
+.how-to-pay {
+  background-color: #f6fcf9;
+  text-align: center;
+  justify-items: center;
+  padding-top: 40px;
+}
+
+
+.how-to-pay h2 {
+  font-size: 2rem;
+  color: #212121;
+  margin-bottom: 2rem;
+  font-weight: 100;
+}
+
+.how-to-pay h2 span{
+  font-family: gilroy-bold, sans-serif;
+  font-weight: bold;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Step Card */
+.step {
+  display: flex;
+  flex-direction:row-reverse;;
+  gap: 5rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 70vw;
+  
+}
+
+.step_2{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.step-image{
+
+  width: 24vw;
+  height: 50vh;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.step-content {
+  text-align: left;
+  width: 450px;
+  padding: 40px 0 ;
+
+}
+
+.step-content h3 {
+  font-size: 1rem;
+  color: #34a853;
+  margin-bottom: 1rem;
+}
+
+.step-content h4 {
+  font-family: gilroy-semibold, sans-serif;
+  font-size: 1.75rem;
+  color: #212121;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.step-content p {
+  color: #616161;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.apply-link {
+  color: #0e0e0e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font: 1rem;
+}
+.apply-link span{
+  color: #1e8f43;
+  font-weight: 700;
+}
+.apply-link:hover {
+  color: #1e8f43;
+}
+
+ /* Crush Debt today */
+
+ .crushDebt{
+  display: flex;
+  height: 50vh;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(to right,#E5F1E3,#BAE8CB);
+  color: #0E1E14;
+  
+}
+
+
+
+.crushDebt .text {
+  flex-basis: 50%;
+  font-size: 3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+
+}
+
+.crushDebt p span{
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.crushDebt img{
+ width: 50%;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+}
+
+.testimonial-section h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.testimonial-section p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Container for Horizontal Scroll */
+.testimonial-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto; /* Horizontal scroll enabled */
+  scroll-snap-type: x mandatory; /* Smooth snap effect */
+  padding: 1rem;
+  justify-content: space-around;
+  padding: 0 100px;
+  align-items: center;
+}
+
+.testimonial-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Individual Testimonial Box */
+.testimonial-box {
+  max-width: 200px; /* Box width for mobile screens */
+  height: 270px;
+  flex: 0 0 auto;
+  background: #f6fcf9;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start; /* Smooth scrolling alignment */
+  text-align: left;
+}
+
+.testimonial-box .stars{
+  color: #00a86b;
+  font-size: 1.2rem;
+}
+
+.testimonial-box p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.testimonial-box h4 {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #000;
+}
+
+
+/* FAQ Section Title */
+
+.faq-section .container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq-section h2 span {
+  font-weight: lighter;
+  color: #00a86b; /* Green color for emphasis */
+}
+
+/* FAQ Items */
+
+
+.faq {
+  text-align: left;
+}
+
+.faq-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+.faq-item:hover {
+  border-color: #00a86b;
+}
+
+.faq-item .question {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.faq-item .check,
+.faq-item .cross {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #00a86b; /* Green for check */
+}
+
+.faq-item .cross {
+  color: #ff6b6b; /* Red for cross */
+}
+
+/* Answer Styling */
+.faq-item .answer {
+  display: none; /* Initially hidden */
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.faq-item.active .answer {
+  display: block; /* Show answer when active */
+}
+
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f8f8f8;
+  color: #5555559a;
+  font-size: 0.6rem;
+  line-height: 1.5;
+  padding: 20px 100px;
+  border-top: 1px solid #ddd;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer ol {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.footer ol li {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  *{
+    overflow-x: hidden;
+  }
+
+  .heading .container{
+    margin: 0 10px;
+  }
+  .heading .logo img{
+    width: 40px;
+  }
+
+  .nav-links li p{
+    display: none;
+  }
+
+  .nav-links .stores{
+    width: 25px;
+  }
+
+  .heading .container1 p{
+    font-size: 30px;
+    padding: 10px;
+    line-height: 30px;
+  }
+
+
+  .heading .container1 p1{
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .heading-features{
+    flex-direction: column;
+    text-align: left;
+    margin-left: -20px;
+  }
+  .heading-features img{
+    width: 15px;
+  }
+
+  .container1 .Downloadapp{
+    display: inline;
+  }
+
+  .heading-image{
+    width: 80%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  .heading-image .DskDownload{
+    display: none;
+  }
+  .heading-image .demo{
+    width: 100%;
+    height: 100%;
+  }
+
+  .why-bright .container{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .why-bright .features{
+    flex-direction: column;
+  }
+  .why-bright .feature{
+    justify-content: flex-start;
+    margin: 0 20px ;
+  }
+
+  .why-bright .feature img{
+    width: 70px;
+  }
+
+  .why-bright .container .Downloadapp{
+    display: inline;
+  }
+
+  .asFeaturedBy{
+    font-size:5px;
+    margin-top: 10px;
+    padding: 10px 0 0 0;
+    gap: 10px;
+
+  }
+
+  .asFeaturedBy img{
+    width: 50px;
+  }
+
+  .asFeaturedBy .cnbc img{
+    width: 30px;
+  }
+
+  .how-to-pay{
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  .how-to-pay .container h2{
+    margin: 0 20px;
+  }
+  .how-to-pay h2 span{
+    font-weight: bold;
+  }
+
+  .how-to-pay .container .Downloadapp{
+    display: inline;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+
+  .step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 380px;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px;
+ 
+  }
+
+
+  .step-image{
+    width: 300px;
+    height: 250px;
+    border-radius: 5%;
+    overflow-y: hidden;
+    margin-top: -80px ;
+    
+  }
+
+  .step-image img{
+    border-radius: 40px;
+  }
+
+  .step-content{
+    width: fit-content;
+  }
+
+  .step-content h3,
+  .step-content h4,
+  .step-content p,
+  .step-content .apply-link
+  
+  {
+    text-align: left;
+    font-size: 1.2rem;
+
+  }
+
+  .testimonial-section h2{
+    font-size: 2.1rem;
+    font-family: gilroy-semibold, sans-serif;
+    margin: 0 20px;
+  }
+
+  .testimonial-section p{
+    font-size: 0.9rem;
+    
+  }
+  .testimonial-container {
+    gap: 2rem;
+  }
+  .testimonial-box {
+    max-width: 200px;
+  }
+
+
+  .crushDebt{
+    flex-direction: column;
+  }
+
+   .crushDebt .text{
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .crushDebt .text span{
+    font-size:1.5rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+   }
+
+   .crushDebt .Downloadapp{
+    display: inline;
+    width: 300px;
+    height: 40px;
+    padding: 0px;
+   } 
+   .crushDebt .Downloadapp img{
+    width: 20px;
+   }
+
+   .crushDebt img{
+    width: 100%;
+   }
+
+
+   .footer{
+    padding: 0;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+}
+
+
+
